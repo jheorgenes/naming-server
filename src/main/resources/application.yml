@@ -1,0 +1,11 @@
+# Porta normalmente utilizada para o Eureka
+server:
+  port: 8761
+spring:
+  application:
+    name: naming-server
+# Como só tem um eureka rodando, abaixo eu desabilito que ele procure outros eurekas ou ele mesmo como uma instância ativa.
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
